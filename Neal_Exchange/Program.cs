@@ -11,7 +11,6 @@ namespace Neal_Exchange
 
             int _selection = -1;
             decimal _amount;
-            decimal _exchangedAmount;
             ExchangeMonitor monitor = new ExchangeMonitor();
 
             do
@@ -23,7 +22,7 @@ namespace Neal_Exchange
                 if (ParseINT(selectionInput))
                 {
                     _selection = int.Parse(selectionInput);
-                    
+
                     if (_selection == 0)
                     {
                         Console.Clear();
@@ -41,16 +40,18 @@ namespace Neal_Exchange
 
                         if (ParseDEC(amountInput) == true)
                         {
-                            Console.WriteLine("\n\tSUCCESS!");
-                            Thread.Sleep(1500);
-
                             _amount = decimal.Parse(amountInput);
-                            _exchangedAmount = monitor.Run(_selection, _amount);
+
+                            Console.WriteLine($"{monitor.Run(_selection, _amount)}" +
+                                $"\n\t. . .");
+                            Thread.Sleep(4000);
+
                             parseSuccess = true;
                         }
                         else
                         {
-                            Console.WriteLine("\n\tINVALID INPUT! TRY AGAIN");
+                            Console.WriteLine("\n\tINVALID INPUT! TRY AGAIN" +
+                                "\n\t. . .");
                             Thread.Sleep(1500);
                             Console.Clear();
                             Console.Write(ExchangeChoices());
@@ -60,7 +61,8 @@ namespace Neal_Exchange
                 }
                 else
                 {
-                    Console.WriteLine("\n\tINVALID INPUT! TRY AGAIN");
+                    Console.WriteLine("\n\tINVALID INPUT! TRY AGAIN" +
+                        "\n\t. . .");
                     Thread.Sleep(1500);
                 }
             } while (_selection != 0);
