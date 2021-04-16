@@ -27,7 +27,7 @@ namespace Neal_Exchange
                     {
                         Console.Clear();
                         Console.WriteLine(monitor.PrintOut());
-                        Console.Write("\n\tPress any key to close the application. . .");
+                        Console.Write("\n\tPress any key to close the application.");
                         Console.ReadKey();
                         break;
                     }
@@ -66,7 +66,6 @@ namespace Neal_Exchange
                     Thread.Sleep(1500);
                 }
             } while (_selection != 0);
-
         }
         static void SplashScreen()
         {

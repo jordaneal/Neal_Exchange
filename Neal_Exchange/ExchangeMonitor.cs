@@ -8,7 +8,8 @@
         public string PrintOut()
         {
             return $"\n\n\tNumber of successful exchanges: {_counter}" +
-                $"\n\n\tTotal Amount exchanged (USD):  {_totalAmount.ToString("C")}";
+                $"\n\n\tTotal Amount exchanged (USD):  {_totalAmount.ToString("C")}" +
+                $"\n\t. . .";
         }
         public string Run(int selection, decimal amount)
         {
