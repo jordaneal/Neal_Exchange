@@ -66,6 +66,18 @@ namespace Neal_Exchange
             } while (_selection != 0);
 
         }
+        static void SplashScreen()
+        {
+            Console.WriteLine("\n\n\n\n\n\n\n\t\t88888b.d88b.  .d88b. 88888b.  .d88b. 888  888");
+            Console.WriteLine("\t\t888 \"888 \"88bd88\"\"88b888 \"88bd8P  Y8b888  888");
+            Console.WriteLine("\t\t888  888  888888  888888  88888888888888  888");
+            Console.WriteLine("\t\t888  888  888Y88..88P888  888Y8b.    Y88b 888");
+            Console.WriteLine("\t\t888  888  888 \"Y88P\" 888  888 \"Y8888  \"Y88888");
+            Console.WriteLine("\t\t                                          888");
+            Console.WriteLine("\t\t                                     Y8b d88P");
+            Console.WriteLine("\t\t                                     \"Y88P\"");
+            Thread.Sleep(3000);
+        }
         static string ExchangeChoices()
         {
             return "\n\n\t0:  End the program and display session print out." +
@@ -108,18 +120,5 @@ namespace Neal_Exchange
             else
                 return false;
         }
-        static void SplashScreen()
-        {
-            Console.WriteLine("\n\n\n\n\n\n\n\t\t88888b.d88b.  .d88b. 88888b.  .d88b. 888  888");
-            Console.WriteLine("\t\t888 \"888 \"88bd88\"\"88b888 \"88bd8P  Y8b888  888");
-            Console.WriteLine("\t\t888  888  888888  888888  88888888888888  888");
-            Console.WriteLine("\t\t888  888  888Y88..88P888  888Y8b.    Y88b 888");
-            Console.WriteLine("\t\t888  888  888 \"Y88P\" 888  888 \"Y8888  \"Y88888");
-            Console.WriteLine("\t\t                                          888");
-            Console.WriteLine("\t\t                                     Y8b d88P");
-            Console.WriteLine("\t\t                                     \"Y88P\"");
-            Thread.Sleep(3000);
-        }
-
     }
 }

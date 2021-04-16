@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Neal_Exchange
+﻿namespace Neal_Exchange
 {
     class ExchangeMonitor
     {
@@ -19,10 +13,10 @@ namespace Neal_Exchange
         public decimal Run(int selection, decimal amount)
         {
             _counter++;
-            TotalUpdater(selection, amount);
+            UpdateTotal(selection, amount);
             return CurrencyConverter(selection, amount);
         }
-        private void TotalUpdater(int selection, decimal amount)
+        private void UpdateTotal(int selection, decimal amount)
         {
             if (selection > 0 && selection < 4)
             {
