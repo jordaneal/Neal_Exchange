@@ -19,7 +19,7 @@
         }
         private void UpdateTotal(int selection, decimal amount)
         {
-            if (selection > 0 && selection < 4)
+            if (selection < 4)
             {
                 _totalAmount = _totalAmount + amount;
             }
@@ -31,7 +31,7 @@
             {
                 _totalAmount = _totalAmount + Exchanger.CANtoUSD(amount);
             }
-            else if (selection > 9 && selection < 13)
+            else if (selection > 9)
             {
                 _totalAmount = _totalAmount + Exchanger.EURtoUSD(amount);
             }
