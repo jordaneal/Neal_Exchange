@@ -31,7 +31,7 @@
             {
                 _totalAmount = _totalAmount + Exchanger.CANtoUSD(amount);
             }
-            else if (selection > 9)
+            else
             {
                 _totalAmount = _totalAmount + Exchanger.EURtoUSD(amount);
             }
