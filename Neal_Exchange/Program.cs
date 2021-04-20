@@ -27,7 +27,7 @@ namespace Neal_Exchange
                     {
                         Console.Clear();
                         Console.WriteLine(monitor.PrintOut());
-                        Console.Write("\n\tPress any key to end the program. . .\n\t");
+                        Console.Write("\n\n\tPress any key to end the program. . .\n\t");
                         Console.ReadKey();
                         break;
                     }
