@@ -35,14 +35,15 @@ namespace Neal_Exchange
                     bool parseSuccess = false;
                     do
                     {
-                        Console.Write("\tEnter amount you wish to exchange: ");
+                        Console.Write("\n\tEnter the amount you wish to exchange: $");
                         string amountInput = Console.ReadLine();
 
                         if (ParseDEC(amountInput) == true)
                         {
                             _amount = decimal.Parse(amountInput);
 
-                            Console.Write($"\n\tSUCCESS! {monitor.Run(_selection, _amount)}" +
+                            Console.Write($"\t. . ." +
+                                $"\n\n\tSUCCESS! {monitor.Run(_selection, _amount)}" +
                                 $"\n\n\tSaving data and resetting the page...");
                             Thread.Sleep(7000);
 
