@@ -27,7 +27,7 @@ namespace Neal_Exchange
                     {
                         Console.Clear();
                         Console.WriteLine(monitor.PrintOut());
-                        Console.Write("\n\tPress any key to close the application.");
+                        Console.Write("\n\tPress any key to close the application. . .");
                         Console.ReadKey();
                         break;
                     }
@@ -42,15 +42,15 @@ namespace Neal_Exchange
                         {
                             _amount = decimal.Parse(amountInput);
 
-                            Console.WriteLine($"{monitor.Run(_selection, _amount)}" +
+                            Console.Write($"{monitor.Run(_selection, _amount)}" +
                                 $"\n\t. . .");
-                            Thread.Sleep(4000);
+                            Thread.Sleep(7000);
 
                             parseSuccess = true;
                         }
                         else
                         {
-                            Console.WriteLine("\n\tINVALID INPUT! TRY AGAIN" +
+                            Console.Write("\n\tINVALID INPUT! TRY AGAIN" +
                                 "\n\t. . .");
                             Thread.Sleep(1500);
                             Console.Clear();
@@ -61,7 +61,7 @@ namespace Neal_Exchange
                 }
                 else
                 {
-                    Console.WriteLine("\n\tINVALID INPUT! TRY AGAIN" +
+                    Console.Write("\n\tINVALID INPUT! TRY AGAIN" +
                         "\n\t. . .");
                     Thread.Sleep(1500);
                 }
@@ -76,12 +76,13 @@ namespace Neal_Exchange
             Console.WriteLine("\t\t888  888  888 \"Y88P\" 888  888 \"Y8888  \"Y88888");
             Console.WriteLine("\t\t                                          888");
             Console.WriteLine("\t\t                                     Y8b d88P");
-            Console.WriteLine("\t\t                                     \"Y88P\"");
+            Console.Write("\t\t                                     \"Y88P\"");
             Thread.Sleep(3000);
         }
         static string ExchangeChoices()
         {
-            return "\n\n\t0:  End the program and display session print out." +
+            return "\n\n\t-- Currency Exchange Calculator --" +
+                "\n\n\t0:  End the program and display session print out." +
                 "\n\t1:  US Dollar to British Pound" +
                 "\n\t2:  US Dollar to Canadian Dollar" +
                 "\n\t3:  US Dollar to Euro" +
@@ -95,7 +96,7 @@ namespace Neal_Exchange
                 "\n\t11: Euro to British Pound" +
                 "\n\t12: Euro to Canadian Dollar" +
                 "\n\t. . .\n" +
-                "\tEnter an above selection (0-12) followed by the \"enter\" key: ";
+                "\n\tEnter an above selection (0-12) followed by the \"enter\" key: ";
         }
         static bool ParseINT(string input)
         {
