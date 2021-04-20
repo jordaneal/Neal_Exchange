@@ -42,8 +42,8 @@ namespace Neal_Exchange
                         {
                             _amount = decimal.Parse(amountInput);
 
-                            Console.Write($"{monitor.Run(_selection, _amount)}" +
-                                $"\n\t. . .");
+                            Console.Write($"\n\tSUCCESS! {monitor.Run(_selection, _amount)}" +
+                                $"\n\n\tSaving data and the form...");
                             Thread.Sleep(7000);
 
                             parseSuccess = true;
@@ -76,7 +76,7 @@ namespace Neal_Exchange
             Console.WriteLine("\t\t888  888  888 \"Y88P\" 888  888 \"Y8888  \"Y88888");
             Console.WriteLine("\t\t                                          888");
             Console.WriteLine("\t\t                                     Y8b d88P");
-            Console.Write("\t\t                                     \"Y88P\"");
+            Console.Write("\t\t                                      \"Y88P\"");
             Thread.Sleep(3000);
         }
         static string ExchangeChoices()

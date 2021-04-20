@@ -39,62 +39,62 @@
         {
             if (selection == 1)
             {
-                return $"\n\tSUCCESS! {amount.ToString("C")} USD " +
+                return $"{amount.ToString("C")} USD " +
                         $"converted to {Exchanger.USDtoGBP(amount).ToString("C")} GBP";
             }
             else if (selection == 2)
             {
-                return $"\n\tSUCCESS! {amount.ToString("C")} USD " +
+                return $"{amount.ToString("C")} USD " +
                         $"converted to {Exchanger.USDtoCAN(amount).ToString("C")} CAN";
             }
             else if (selection == 3)
             {
-                return $"\n\tSUCCESS! {amount.ToString("C")} USD " +
+                return $"{amount.ToString("C")} USD " +
                         $"converted to {Exchanger.USDtoEUR(amount).ToString("C")} EUR";
             }
             else if (selection == 4)
             {
-                return $"\n\tSUCCESS! {amount.ToString("C")} GBP " +
+                return $"{amount.ToString("C")} GBP " +
                         $"converted to {Exchanger.GBPtoUSD(amount).ToString("C")} USD";
             }
             else if (selection == 5)
             {
-                return $"\n\tSUCCESS! {amount.ToString("C")} GBP " +
+                return $"{amount.ToString("C")} GBP " +
                         $"converted to {Exchanger.GBPtoCAN(amount).ToString("C")} CAN";
             }
             else if (selection == 6)
             {
-                return $"\n\tSUCCESS! {amount.ToString("C")} GBP " +
+                return $"{amount.ToString("C")} GBP " +
                         $"converted to {Exchanger.GBPtoEUR(amount).ToString("C")} EUR";
             }
             else if (selection == 7)
             {
-                return $"\n\tSUCCESS! {amount.ToString("C")} CAN " +
+                return $"{amount.ToString("C")} CAN " +
                         $"converted to {Exchanger.CANtoUSD(amount).ToString("C")} USD";
             }
             else if (selection == 8)
             {
-                return $"\n\tSUCCESS! {amount.ToString("C")} CAN " +
+                return $"{amount.ToString("C")} CAN " +
                         $"converted to {Exchanger.CANtoGBP(amount).ToString("C")} GBP";
             }
             else if (selection == 9)
             {
-                return $"\n\tSUCCESS! {amount.ToString("C")} CAN " +
+                return $"{amount.ToString("C")} CAN " +
                         $"converted to {Exchanger.CANtoEUR(amount).ToString("C")} EUR";
             }
             else if (selection == 10)
             {
-                return $"\n\tSUCCESS! {amount.ToString("C")} EUR " +
+                return $"{amount.ToString("C")} EUR " +
                         $"converted to {Exchanger.EURtoUSD(amount).ToString("C")} USD";
             }
             else if (selection == 11)
             {
-                return $"\n\tSUCCESS! {amount.ToString("C")} EUR " +
+                return $"{amount.ToString("C")} EUR " +
                         $"converted to {Exchanger.EURtoGBP(amount).ToString("C")} GBP";
             }
             else if (selection == 12)
             {
-                return $"\n\tSUCCESS! {amount.ToString("C")} EUR " +
+                return $"{amount.ToString("C")} EUR " +
                         $"converted to {Exchanger.EURtoCAN(amount).ToString("C")} CAN";
             }
             else
